@@ -17,20 +17,29 @@
         
             <h2>LOGIN</h2>
             <div>
-                <input type="text" class="info" placeholder="Username">
-                <input type="password" pattern=".{8,}" id="senha" title="Deve haver pelo menos 8 caracteres" class="info" placeholder="Password">
 
-                <div class="check">
-                    <label class="remember">
-                        <input type="checkbox">
-                        <span></span>
-                        Remember me
-                    </label>
-                    <p>Forgot Password?</p>
+                <!--action="" method="post"-->
+                <form autocomplete="on">
 
-                </div>
+                    <input type="text" class="info" placeholder="Username" autocomplete="username" required>
 
-                <input type="button" value="LOGIN">
+                    <input type="password" id="senha" minlength="8" class="info" placeholder="Password" autocomplete="current-password" required>
+
+                
+
+                    <div class="check">
+                        <label class="remember">
+                            <input type="checkbox">
+                            <span></span>
+                            Remember me
+                        </label>
+                        <p>Forgot Password?</p>
+
+                    </div>
+
+                    <input type="submit" value="LOGIN">
+
+                </form>
 
                 <p>Don't have an account? <strong>Sign up</strong></p>
             </div>
